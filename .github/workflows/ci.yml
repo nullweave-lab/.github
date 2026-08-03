@@ -1,0 +1,77 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: governance-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required community files
+        run: |
+          set -eu
+          test -s README.md
+          test -s profile/README.md
+          test -s CONTRIBUTING.md
+          test -s SECURITY.md
+          test -s CODE_OF_CONDUCT.md
+          test -s .github/PULL_REQUEST_TEMPLATE.md
+          test -s .github/ISSUE_TEMPLATE/config.yml
+
+      - name: Parse and validate issue forms
+        run: |
+          ruby <<'RUBY'
+          require "yaml"
+
+          forms = Dir[".github/ISSUE_TEMPLATE/*.yml"].reject { |path| File.basename(path) == "config.yml" }
+          abort("no issue forms found") if forms.empty?
+
+          forms.each do |path|
+            document = YAML.safe_load(File.read(path), aliases: false)
+            abort("#{path}: root must be a mapping") unless document.is_a?(Hash)
+            %w[name description body].each do |key|
+              value = document[key]
+              abort("#{path}: missing #{key}") if value.nil? || value.respond_to?(:empty?) && value.empty?
+            end
+            abort("#{path}: body must be an array") unless document["body"].is_a?(Array)
+          end
+
+          config = YAML.safe_load(File.read(".github/ISSUE_TEMPLATE/config.yml"), aliases: false)
+          abort("config.yml: root must be a mapping") unless config.is_a?(Hash)
+          puts "community health validation passed"
+          RUBY
+
+      - name: Reject hidden Unicode formatting characters
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+
+          hidden = {"\u200b", "\u200c", "\u200d", "\ufeff"}
+          failures = []
+          for path in Path(".").rglob("*"):
+              if not path.is_file() or ".git" in path.parts:
+                  continue
+              if path.suffix.lower() not in {".md", ".yml", ".yaml"}:
+                  continue
+              text = path.read_text(encoding="utf-8")
+              if any(character in text for character in hidden):
+                  failures.append(str(path))
+          if failures:
+              print("hidden Unicode formatting characters found:", *failures, sep="\n  ", file=sys.stderr)
+              raise SystemExit(1)
+          print("Unicode hygiene validation passed")
+          PY

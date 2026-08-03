@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible defect in public code, tests, or documentation.
+title: "bug: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not use this form for vulnerabilities or sensitive bypasses. Follow SECURITY.md.
+  - type: input
+    id: repository
+    attributes:
+      label: Repository and revision
+      placeholder: nullweave-lab/repository @ commit SHA or version
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Observed behavior
+      description: State what happened without including secrets or sensitive exploitation details.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Provide a minimal, sanitized reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant OS, Android version, ABI, toolchain, and configuration.
+  - type: dropdown
+    id: sensitive
+    attributes:
+      label: Security-sensitive content check
+      options:
+        - I confirm this report contains no vulnerability details, credentials, private data, or unresolved bypass chain.
+    validations:
+      required: true

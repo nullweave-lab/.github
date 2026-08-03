@@ -1,0 +1,24 @@
+name: Documentation issue
+description: Report unclear, inconsistent, incomplete, or outdated public documentation.
+title: "docs: "
+labels: ["documentation", "needs-triage"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Document location
+      placeholder: Repository, file, section, or link
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Explain what is unclear, inconsistent, incomplete, or outdated.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction or source
+      description: Provide an authoritative source when the issue concerns a factual claim.
