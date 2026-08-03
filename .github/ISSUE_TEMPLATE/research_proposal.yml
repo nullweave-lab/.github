@@ -1,0 +1,40 @@
+name: Research proposal
+description: Propose a public research question, experiment, or protocol change.
+title: "research: "
+labels: ["research", "needs-triage"]
+body:
+  - type: input
+    id: question
+    attributes:
+      label: Research question
+      description: Phrase the proposal as a question that can be investigated or falsified.
+    validations:
+      required: true
+  - type: textarea
+    id: basis
+    attributes:
+      label: Existing basis
+      description: Identify established facts, relevant standards, prior work, or reproducible observations.
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis or expected result
+      description: Clearly mark assumptions and uncertainty.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Proposed method
+      description: Describe measurements, controls, datasets, and falsification criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: disclosure
+    attributes:
+      label: Disclosure and safety boundary
+      description: Explain why the proposal is suitable for public work and whether patent or vulnerability review is needed before publication.
+    validations:
+      required: true
