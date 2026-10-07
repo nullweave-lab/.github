@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="290" viewBox="0 0 1200 290" role="img" aria-labelledby="t d">
+<title id="t">nullweave</title><desc id="d">Research namespace for runtime integrity and matter-anchored computing.</desc>
+<defs>
+  <radialGradient id="void" cx="78%" cy="48%" r="48%"><stop stop-color="#34266b" stop-opacity=".44"/><stop offset=".55" stop-color="#17131f" stop-opacity=".18"/><stop offset="1" stop-color="#090b0f" stop-opacity="0"/></radialGradient>
+  <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7868ff"/><stop offset="1" stop-color="#b7a8ff"/></linearGradient>
+</defs>
+<rect width="1200" height="290" rx="24" fill="#090b0f"/><rect width="1200" height="290" rx="24" fill="url(#void)"/>
+<g transform="translate(52 45)">
+  <text x="0" y="24" fill="#666f7d" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" letter-spacing="3">NULL / RESEARCH SURFACE</text>
+  <text x="0" y="105" fill="#f1f2f4" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="60" font-weight="600" letter-spacing="2">nullweave</text>
+  <text x="2" y="145" fill="#949daa" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" letter-spacing="1.4">runtime integrity · physically grounded trust · systems research</text>
+  <path d="M0 190H520" stroke="url(#line)" stroke-width="1.8"/>
+  <text x="0" y="220" fill="#5f6875" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" letter-spacing="1.8">CLAIMS FOLLOW EVIDENCE</text>
+</g>
+<g transform="translate(830 38)" fill="none">
+  <circle cx="126" cy="106" r="88" stroke="#8878ff" stroke-opacity=".34" stroke-width="1.2"/>
+  <circle cx="126" cy="106" r="60" stroke="#a797ff" stroke-opacity=".20" stroke-width="1"/>
+  <circle cx="126" cy="106" r="24" stroke="#c1b8ff" stroke-opacity=".34"/>
+  <path d="M38 106H214M126 18V194" stroke="#fff" stroke-opacity=".07"/>
+  <path d="M63 43L189 169M189 43L63 169" stroke="#fff" stroke-opacity=".055"/>
+  <circle cx="126" cy="106" r="4.5" fill="#a797ff" stroke="none"/>
+  <circle cx="189" cy="169" r="3" fill="#7868ff" stroke="none"/>
+  <path d="M214 106H272" stroke="#8878ff" stroke-opacity=".45"/>
+  <text x="229" y="96" fill="#676f7d" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">observe</text>
+  <text x="229" y="112" fill="#676f7d" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">prove</text>
+</g>
+</svg>
