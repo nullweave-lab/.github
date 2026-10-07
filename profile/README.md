@@ -1,25 +1,33 @@
-<p align="center"><img src="./assets/header.svg" alt="nullweave — integrity research namespace" width="100%"></p>
+<!-- organization profile, audited against complete public repository roots on 2026-10-07 -->
 
-<p align="center"><sub>quiet by design · repository names are not implementation claims</sub></p>
+<p align="center"><img src="./assets/header.svg" alt="nullweave — research namespace" width="100%"></p>
 
-**nullweave-lab is a research namespace for runtime integrity, proof systems and physically grounded computing.**
+**nullweave-lab is a research namespace, not a finished product suite.**
 
-The public surface is intentionally conservative. Several repositories currently define a research or architectural boundary before substantial public implementation exists, so this page does not turn repository names into a feature matrix.
+The current public surface is intentionally sparse. Most repositories are still architectural entries or research placeholders whose root contains only a README, sometimes with a license. Their names are therefore **not** presented here as implemented feature claims.
 
-## 01 / current public surfaces
+## NOTE / 01 — what exists publicly
 
-| Repository | Public role |
+| Repository | Current public record |
 | --- | --- |
-| [android-runtime-integrity-platform](https://github.com/nullweave-lab/android-runtime-integrity-platform) | architecture, roadmap and repository index |
-| [parc-spec](https://github.com/nullweave-lab/parc-spec) | protocol / proof-format / interface specification surface |
-| [matter-anchored-computing](https://github.com/nullweave-lab/matter-anchored-computing) | research direction for matter-anchored and physically grounded computation |
+| [android-runtime-integrity-platform](https://github.com/nullweave-lab/android-runtime-integrity-platform) | architecture / roadmap / repository index entry |
+| [matter-anchored-computing](https://github.com/nullweave-lab/matter-anchored-computing) | research-topic entry for physically grounded integrity |
+| [parc-spec](https://github.com/nullweave-lab/parc-spec) | protocol/specification placeholder |
+| [parc-proof](https://github.com/nullweave-lab/parc-proof) | proof-generation repository shell with public license |
+| [parc-verifier](https://github.com/nullweave-lab/parc-verifier) | verifier repository shell with public license |
+| [parc-native-probes](https://github.com/nullweave-lab/parc-native-probes) | native-probe repository shell with public license |
+| [parc-test-lab](https://github.com/nullweave-lab/parc-test-lab) | test-lab repository shell with public license |
 
-Other PARC repositories reserve narrower concerns such as proof generation, verification, policy, native probes, rule packs, test infrastructure and service integration. Their existence is **not** treated here as evidence that those components are complete.
+Other `parc-*` repositories currently serve as named research/architecture boundaries rather than evidence of finished implementations.
 
-## 02 / evidence rule
+## NOTE / 02 — publication rule
 
-A capability should appear on this page only after its repository provides enough public code, tests, measurements or published evidence to support the claim.
+A repository moves from *named surface* to *implemented surface* only when the repository itself contains code, tests, measurements, specifications or other inspectable evidence that supports the claim.
 
-Until then, the organization page stays an index of research boundaries rather than a roadmap disguised as a product sheet.
+Until then:
 
-<p align="center"><sub>scope follows evidence</sub></p>
+`name ≠ implementation`  
+`roadmap ≠ capability`  
+`planned scope ≠ shipped feature`
+
+<p align="center"><sub>quiet by design · evidence before scope</sub></p>
