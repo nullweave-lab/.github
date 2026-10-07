@@ -1,9 +1,21 @@
 <p align="center"><img src="./assets/header.svg" alt="nullweave" width="100%"></p>
 
-<p align="center"><code>runtime integrity</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>proof systems</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>physically grounded computing</code></p>
+**nullweave-lab is a research namespace.** Its public surface is intentionally sparse.
 
-**nullweave-lab is a research namespace.**
+As of the current repository state, most public projects in this organization are **research/specification shells** containing a README and, in a few cases, a license. They are not presented here as implemented products.
 
-Its public surface is intentionally narrow: research directions may exist before a public implementation does, so this page does not advertise a product matrix or feature checklist. Repository-level claims should be backed by code, tests, measurements, or published evidence in that repository.
+## 01 / research topology
+
+| Track | Public repository role | Current public implementation state |
+| --- | --- | --- |
+| PARC | protocol/specification, papers, proof/verifier, SDK, policy and test-lab namespace | repository topology exists; most repositories are scaffold-only |
+| Android runtime integrity | architecture / roadmap / repository index | index only |
+| Matter-anchored computing | physically grounded integrity research | research note only |
+
+Representative entry points: [parc-spec](https://github.com/nullweave-lab/parc-spec) · [parc-paper](https://github.com/nullweave-lab/parc-paper) · [parc-proof](https://github.com/nullweave-lab/parc-proof) · [parc-verifier](https://github.com/nullweave-lab/parc-verifier)
+
+## 02 / claim policy
+
+A repository name describes a research boundary, not a shipped capability. Implementation claims should appear only after that repository contains inspectable code, tests, measurements or publication evidence.
 
 <p align="center"><sub>quiet by design · evidence before scope</sub></p>
