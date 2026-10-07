@@ -1,21 +1,25 @@
-<p align="center"><img src="./assets/header.svg" alt="nullweave" width="100%"></p>
+<p align="center"><img src="./assets/header.svg" alt="nullweave — integrity research namespace" width="100%"></p>
 
-**nullweave-lab is a research namespace.** Its public surface is intentionally sparse.
+<p align="center"><sub>quiet by design · repository names are not implementation claims</sub></p>
 
-As of the current repository state, most public projects in this organization are **research/specification shells** containing a README and, in a few cases, a license. They are not presented here as implemented products.
+**nullweave-lab is a research namespace for runtime integrity, proof systems and physically grounded computing.**
 
-## 01 / research topology
+The public surface is intentionally conservative. Several repositories currently define a research or architectural boundary before substantial public implementation exists, so this page does not turn repository names into a feature matrix.
 
-| Track | Public repository role | Current public implementation state |
-| --- | --- | --- |
-| PARC | protocol/specification, papers, proof/verifier, SDK, policy and test-lab namespace | repository topology exists; most repositories are scaffold-only |
-| Android runtime integrity | architecture / roadmap / repository index | index only |
-| Matter-anchored computing | physically grounded integrity research | research note only |
+## 01 / current public surfaces
 
-Representative entry points: [parc-spec](https://github.com/nullweave-lab/parc-spec) · [parc-paper](https://github.com/nullweave-lab/parc-paper) · [parc-proof](https://github.com/nullweave-lab/parc-proof) · [parc-verifier](https://github.com/nullweave-lab/parc-verifier)
+| Repository | Public role |
+| --- | --- |
+| [android-runtime-integrity-platform](https://github.com/nullweave-lab/android-runtime-integrity-platform) | architecture, roadmap and repository index |
+| [parc-spec](https://github.com/nullweave-lab/parc-spec) | protocol / proof-format / interface specification surface |
+| [matter-anchored-computing](https://github.com/nullweave-lab/matter-anchored-computing) | research direction for matter-anchored and physically grounded computation |
 
-## 02 / claim policy
+Other PARC repositories reserve narrower concerns such as proof generation, verification, policy, native probes, rule packs, test infrastructure and service integration. Their existence is **not** treated here as evidence that those components are complete.
 
-A repository name describes a research boundary, not a shipped capability. Implementation claims should appear only after that repository contains inspectable code, tests, measurements or publication evidence.
+## 02 / evidence rule
 
-<p align="center"><sub>quiet by design · evidence before scope</sub></p>
+A capability should appear on this page only after its repository provides enough public code, tests, measurements or published evidence to support the claim.
+
+Until then, the organization page stays an index of research boundaries rather than a roadmap disguised as a product sheet.
+
+<p align="center"><sub>scope follows evidence</sub></p>
