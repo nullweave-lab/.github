@@ -1,27 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-labelledby="title desc">
-<title id="title">NULLWEAVE</title>
-<desc id="desc">RUNTIME INTEGRITY · PROOF SYSTEMS · PHYSICAL TRUST</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="t d">
+<title id="t">NULLWEAVE</title><desc id="d">Runtime integrity, proof systems and physically grounded computing research.</desc>
 <style>
-  .bg{fill:#f6f6f2}.ink{fill:#151719}.muted{fill:#6b7278}.line{stroke:#d7d9d8}.accent{fill:#656177}.ghost{fill:none;stroke:#151719;stroke-opacity:.09}.hair{stroke:#656177}
-  @media (prefers-color-scheme:dark){.bg{fill:#0d0f10}.ink{fill:#ececea}.muted{fill:#8d9499}.line{stroke:#292c2e}.ghost{stroke:#ececea;stroke-opacity:.09}}
+.bg{fill:#f2f1ec}.ink{fill:#111315}.muted{fill:#6d6973}.hair{stroke:#cbc8ce}.accent{stroke:#615b70}.node{fill:#615b70}
+@media(prefers-color-scheme:dark){.bg{fill:#0c0c0f}.ink{fill:#efedf2}.muted{fill:#938d9b}.hair{stroke:#2e2b32}.accent{stroke:#9188a3}.node{fill:#9188a3}}
 </style>
-<defs><clipPath id="frame"><rect x="1" y="1" width="1198" height="268" rx="18"/></clipPath></defs>
-<g clip-path="url(#frame)">
-  <rect class="bg" width="1200" height="270"/>
-  <rect class="accent" x="0" y="0" width="7" height="270"/>
-  <line class="line" x1="52" y1="54" x2="1148" y2="54"/>
-  <text class="muted" x="54" y="42" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" letter-spacing="2.8">RESEARCH SURFACE / 03</text>
-  <text class="ink" x="52" y="132" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="52" font-weight="620" letter-spacing="3.2">NULLWEAVE</text>
-  <text class="muted" x="54" y="169" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15" letter-spacing="1.15">RUNTIME INTEGRITY · PROOF SYSTEMS · PHYSICAL TRUST</text>
-  <line class="line" x1="52" y1="216" x2="1148" y2="216"/>
-  <rect class="accent" x="54" y="235" width="82" height="4" rx="2"/>
-  <rect class="accent" x="144" y="235" width="28" height="4" rx="2" opacity=".55"/>
-  <rect class="accent" x="180" y="235" width="12" height="4" rx="2" opacity=".3"/>
-  <text class="muted" x="205" y="241" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="2">PUBLIC INDEX · 2026</text>
-  <text class="ghost" x="876" y="194" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="170" font-weight="700" stroke-width="2">03</text>
-  <line class="hair" x1="1096" y1="72" x2="1096" y2="194" stroke-width="2"/>
-  <circle class="accent" cx="1096" cy="72" r="3"/>
-  <circle class="accent" cx="1096" cy="194" r="3"/>
+<rect class="bg" width="1200" height="300"/>
+<text class="muted" x="52" y="33" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="2.2">RESEARCH NAMESPACE / PUBLIC SURFACE</text>
+<text class="ink" x="52" y="126" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="55" font-weight="650" letter-spacing="2">NULLWEAVE</text>
+<text class="muted" x="54" y="161" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15" letter-spacing=".75">RUNTIME INTEGRITY · PROOF SYSTEMS · MATTER-ANCHORED COMPUTING</text>
+<line class="hair" x1="52" y1="205" x2="1148" y2="205"/>
+<g transform="translate(858,52)" fill="none" stroke-width="2">
+ <rect class="hair" x="0" y="0" width="78" height="78"/>
+ <rect class="hair" x="108" y="38" width="78" height="78"/>
+ <rect class="hair" x="216" y="76" width="78" height="78"/>
+ <path class="accent" d="M39 78 L147 116 L255 154"/>
+ <circle class="node" cx="39" cy="78" r="4"/><circle class="node" cx="147" cy="116" r="4"/><circle class="node" cx="255" cy="154" r="4"/>
+ <path class="accent" d="M78 39 H108" stroke-dasharray="5 7"/><path class="accent" d="M186 77 H216" stroke-dasharray="5 7"/>
 </g>
-<rect x="1" y="1" width="1198" height="268" rx="18" fill="none" class="line"/>
+<text class="muted" x="52" y="245" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" letter-spacing="1.2">quiet by design · repository names are not implementation claims</text>
 </svg>
